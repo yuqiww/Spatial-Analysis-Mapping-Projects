@@ -16,7 +16,7 @@
 # 
 # Then you can cd to this directory, make this script executable, and run this script:
 # cd /usr/node/conflation_scripts
-# chmod u+x batch_match_bike_rule.sh (skip this line if running on a Windows machine)
+# chmod u+x step1_batch_match_bike_rule.sh (skip this line if running on a Windows machine)
 # ./step1_batch_match_bike_rule.sh (if getting "/bin/bash^M: bad interpreter: No such file or directory" error, 
 #   it means this file has Windows line endings, remove them by running "sed -i -e 's/\r$//' step1_batch_match_bike_rule.sh" before this step)
 
