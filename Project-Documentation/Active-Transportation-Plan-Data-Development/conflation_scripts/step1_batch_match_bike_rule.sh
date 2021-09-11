@@ -14,6 +14,11 @@
 # e.g. on a Windows machine:
 #     docker run -it --rm -v /c/Users/ywang/Documents/GitHub/Spatial-Analysis-Mapping-Projects/Project-Documentation/Active-Transportation-Plan-Data-Development:/usr/node/ shst:latest /bin/bash
 # 
+# First, create a folder to store match results using bike rules
+# cd /usr/node/Data/shst_match
+# mkdir "1_bike_rules"
+# cd /.
+# 
 # Then you can cd to this directory, make this script executable, and run this script:
 # cd /usr/node/conflation_scripts
 # chmod u+x step1_batch_match_bike_rule.sh (skip this line if running on a Windows machine)
@@ -26,5 +31,5 @@ do
     echo ${name}
 
     echo "Matching ${name} to shst using bike routing rules"
-    shst match ../Data/geojson/$name.geojson --out=../Data/shst_match/$name.out1.geojson --tile-hierarchy=8 --match-bike
+    shst match ../Data/geojson/$name.geojson --out=../Data/shst_match/1_bike_rules/$name.out.geojson --tile-hierarchy=8 --match-bike
 done
